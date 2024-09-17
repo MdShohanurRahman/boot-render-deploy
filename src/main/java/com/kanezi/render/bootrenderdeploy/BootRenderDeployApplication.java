@@ -22,5 +22,10 @@ public class BootRenderDeployApplication {
 		String showTimestamp() {
 			return LocalDateTime.now().toString();
 		}
+
+		@GetMapping("/test")
+		String test() {
+			return "Hello World !!!";
+		}
 	}
 }
